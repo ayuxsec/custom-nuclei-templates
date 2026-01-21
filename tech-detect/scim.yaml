@@ -1,0 +1,16 @@
+id: scim-detect
+
+info:
+  name: SCIM Detect
+  author: ayuxsec
+  severity: info
+  description: Detects http server running scim: https://scim.cloud/
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/Schemas"
+    matchers:
+      - type: word
+        words:
+          - 'The URI corresponding to a SCIM resource that is a member of this Group.'
