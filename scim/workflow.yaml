@@ -1,0 +1,11 @@
+id: scim-workflow
+
+info:
+  name: SCIM Exploit Workflow
+  author: ayuxsec
+  severity: critical
+
+workflows:
+  - template: detect.yaml
+    subtemplates:
+      - template: exploit.yaml
