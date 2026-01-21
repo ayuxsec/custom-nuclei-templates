@@ -4,7 +4,7 @@ info:
   name: SCIM Detect
   author: ayuxsec
   severity: info
-  description: Detects http server running scim: https://scim.cloud/
+  description: Detects http server running scim https://scim.cloud/
 
 requests:
   - method: GET
@@ -13,4 +13,4 @@ requests:
     matchers:
       - type: word
         words:
-          - 'The URI corresponding to a SCIM resource that is a member of this Group.'
+          - "The URI corresponding to a SCIM resource that is a member of this Group."
